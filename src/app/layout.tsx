@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { josefinSans, nunito } from '@/fonts';
+import { SidebarTemplate } from '@/components/sidebar/template';
+import { FooterTemplate } from '@/components/footer/template';
 
 export const metadata: Metadata = {
   title: 'Property App',

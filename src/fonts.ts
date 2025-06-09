@@ -1,16 +1,16 @@
 import { Josefin_Sans, Nunito } from 'next/font/google';
 
-const josefinSans = Josefin_Sans({
+const nunito = Nunito({
   variable: '--font-primary',
   subsets: ['latin'],
-  weight: ['300', '400'],
+  weight: ['300'],
   style: ['normal', 'italic'],
 });
 
-const nunito = Nunito({
+const josefinSans = Josefin_Sans({
   variable: '--font-display',
   subsets: ['latin'],
-  weight: ['300'],
+  weight: ['300', '400'],
   style: ['normal', 'italic'],
 });
 

@@ -1,11 +1,12 @@
 import { FeatureSectionCardTemplate } from './card/template';
-import styles from './styles.module.css';
+import { featureSectionItems } from './items';
+import styles from './styles.module.scss';
 
 export const FeaturesSectionTemplate = () => {
   return (
     <div className={styles.container}>
-      {[1, 2, 3, 4, 5, 6].map((item, index) => (
-        <FeatureSectionCardTemplate key={index} />
+      {featureSectionItems.map((item, index) => (
+        <FeatureSectionCardTemplate key={index} {...item} />
       ))}
     </div>
   );

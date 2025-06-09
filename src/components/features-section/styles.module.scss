@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // responsive
+  grid-gap: 6rem;
+  align-items: start;
+
+  margin: 15rem 0;
+}

@@ -1,5 +1,7 @@
 import { FeaturesSectionTemplate } from '@/components/features-section/template';
 import styles from './page.module.css';
+import { StoryContentTemplate } from '@/components/story-content/template';
+import { StoryPicturesTemplate } from '@/components/story-pictures/template';
 
 export default function Home() {
   return (
@@ -11,8 +13,12 @@ export default function Home() {
         <FeaturesSectionTemplate />
       </section>
       <div className={styles.homes}>homes</div>
-      <div className={styles['story-pictures']}>story pictures</div>
-      <div className={styles['story-content']}>story content</div>
+      <div className={styles['story-pictures']}>
+        <StoryPicturesTemplate />
+      </div>
+      <div className={styles['story-content']}>
+        <StoryContentTemplate />
+      </div>
       <div className={styles.gallery}>gallery</div>
       <div className={styles.footer}>footer</div>
     </div>

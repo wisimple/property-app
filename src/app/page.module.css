@@ -34,6 +34,9 @@
 
 .story-content {
   grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
 }
 
 .gallery {

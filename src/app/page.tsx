@@ -2,6 +2,7 @@ import { FeaturesSectionTemplate } from '@/components/features-section/template'
 import styles from './page.module.css';
 import { StoryContentTemplate } from '@/components/story-content/template';
 import { StoryPicturesTemplate } from '@/components/story-pictures/template';
+import { HomesSectionTemplate } from '@/components/homes-section/template';
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
       <section className={styles.features}>
         <FeaturesSectionTemplate />
       </section>
-      <div className={styles.homes}>homes</div>
+      <section className={styles.homes}>
+        <HomesSectionTemplate />
+      </section>
       <div className={styles['story-pictures']}>
         <StoryPicturesTemplate />
       </div>

@@ -1,9 +1,9 @@
-import { IconGlobe } from './icons/globe';
-import { IconKey } from './icons/key';
-import { IconLock } from './icons/lock';
-import { IconMapPin } from './icons/map-pin';
-import { IconPresentationChart } from './icons/presentation-chart';
-import { IconTrophy } from './icons/trophy';
+import { IconGlobe } from '@/icons/globe';
+import { IconKey } from '@/icons/key';
+import { IconLock } from '@/icons/lock';
+import { IconMapPin } from '@/icons/map-pin';
+import { IconPresentationChart } from '@/icons/presentation-chart';
+import { IconTrophy } from '@/icons/trophy';
 
 export const featureSectionItems = [
   {

@@ -6,7 +6,7 @@ export const HomesSectionTemplate = () => {
   return (
     <div className={styles.container}>
       {homeItems.map((item, index) => (
-        <HomeCardTemplate {...item} />
+        <HomeCardTemplate key={index} {...item} />
       ))}
     </div>
   );

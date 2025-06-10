@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import { StoryContentTemplate } from '@/components/story-content/template';
 import { StoryPicturesTemplate } from '@/components/story-pictures/template';
 import { HomesSectionTemplate } from '@/components/homes-section/template';
+import { GallerySectionTemplate } from '@/components/gallery-section/template';
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
       <div className={styles['story-content']}>
         <StoryContentTemplate />
       </div>
-      <div className={styles.gallery}>gallery</div>
+      <div className={styles.gallery}>
+        <GallerySectionTemplate />
+      </div>
       <div className={styles.footer}>footer</div>
     </div>
   );

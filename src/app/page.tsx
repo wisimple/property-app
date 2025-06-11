@@ -7,12 +7,15 @@ import { GallerySectionTemplate } from '@/components/gallery-section/template';
 import FooterTemplate from '@/components/footer/template';
 import { galleryImages } from '@/constants/gallery-images';
 import { homeItems } from '@/constants/home-items';
+import { SidebarTemplate } from '@/components/sidebar/template';
 
 export default function Home() {
   return (
     <>
       <main className={styles.container}>
-        <div className={styles.sidebar}>sidebar</div>
+        <div className={styles.sidebar}>
+          <SidebarTemplate />
+        </div>
         <div className={styles.header}>header</div>
         <div className={styles.agents}>agents</div>
         <section className={styles.features}>

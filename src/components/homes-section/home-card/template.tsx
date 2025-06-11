@@ -5,15 +5,9 @@ import { IconMapPin } from '@/icons/map-pin';
 import { IconExpand } from '@/icons/expand';
 import { IconKey } from '@/icons/key';
 import { IconUser } from '@/icons/user';
+import { HomeInterface } from '@/types/home';
 
-interface HomeCardTemplateProps {
-  imgUrl: string;
-  title: string;
-  location: string;
-  roomCount: number;
-  area: number;
-  price: number;
-}
+interface HomeCardTemplateProps extends HomeInterface {}
 
 export const HomeCardTemplate = (props: HomeCardTemplateProps) => {
   const formattedPrice = new Intl.NumberFormat('en-US', {

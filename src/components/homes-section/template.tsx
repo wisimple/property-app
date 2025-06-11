@@ -1,11 +1,15 @@
 import { HomeCardTemplate } from './home-card/template';
-import { homeItems } from './items';
 import styles from './styles.module.scss';
+import { HomeInterface } from '@/types/home';
 
-export const HomesSectionTemplate = () => {
+interface HomesSectionTemplateProps {
+  homes: HomeInterface[];
+}
+
+export const HomesSectionTemplate = ({ homes }: HomesSectionTemplateProps) => {
   return (
     <div className={styles.container}>
-      {homeItems.map((item, index) => (
+      {homes.map((item, index) => (
         <HomeCardTemplate key={index} {...item} />
       ))}
     </div>

@@ -4,29 +4,36 @@ import { StoryContentTemplate } from '@/components/story-content/template';
 import { StoryPicturesTemplate } from '@/components/story-pictures/template';
 import { HomesSectionTemplate } from '@/components/homes-section/template';
 import { GallerySectionTemplate } from '@/components/gallery-section/template';
+import FooterTemplate from '@/components/footer/template';
+import { galleryImages } from '@/constants/gallery-images';
+import { homeItems } from '@/constants/home-items';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <div className={styles.sidebar}>sidebar</div>
-      <div className={styles.header}>header</div>
-      <div className={styles.agents}>agents</div>
-      <section className={styles.features}>
-        <FeaturesSectionTemplate />
-      </section>
-      <section className={styles.homes}>
-        <HomesSectionTemplate />
-      </section>
-      <div className={styles['story-pictures']}>
-        <StoryPicturesTemplate />
-      </div>
-      <div className={styles['story-content']}>
-        <StoryContentTemplate />
-      </div>
-      <div className={styles.gallery}>
-        <GallerySectionTemplate />
-      </div>
-      <div className={styles.footer}>footer</div>
-    </div>
+    <>
+      <main className={styles.container}>
+        <div className={styles.sidebar}>sidebar</div>
+        <div className={styles.header}>header</div>
+        <div className={styles.agents}>agents</div>
+        <section className={styles.features}>
+          <FeaturesSectionTemplate />
+        </section>
+        <div className={styles['story-pictures']}>
+          <StoryPicturesTemplate />
+        </div>
+        <div className={styles['story-content']}>
+          <StoryContentTemplate />
+        </div>
+        <section className={styles.homes}>
+          <HomesSectionTemplate homes={homeItems} />
+        </section>
+        <div className={styles.gallery}>
+          <GallerySectionTemplate images={galleryImages} />
+        </div>
+      </main>
+      <footer className={styles.footer}>
+        <FooterTemplate />
+      </footer>
+    </>
   );
 }

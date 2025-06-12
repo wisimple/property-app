@@ -8,6 +8,8 @@ import FooterTemplate from '@/components/footer/template';
 import { galleryImages } from '@/constants/gallery-images';
 import { homeItems } from '@/constants/home-items';
 import { SidebarTemplate } from '@/components/sidebar/template';
+import HeaderTemplate from '@/components/header/template';
+import AgentsTemplate from '@/components/agents/template';
 
 export default function Home() {
   return (
@@ -16,8 +18,12 @@ export default function Home() {
         <div className={styles.sidebar}>
           <SidebarTemplate />
         </div>
-        <div className={styles.header}>header</div>
-        <div className={styles.agents}>agents</div>
+        <div className={styles.header}>
+          <HeaderTemplate />
+        </div>
+        <div className={styles.agents}>
+          <AgentsTemplate />
+        </div>
         <section className={styles.features}>
           <FeaturesSectionTemplate />
         </section>

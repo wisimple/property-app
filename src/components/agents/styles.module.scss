@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--color-secondary);
+  height: 100%;
+  padding: 3rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-row-gap: 2rem;
+}
+
+.agents-list {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5vh;
+  align-items: center;
+}
+
+.agent-image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.agent-details {
+}
+
+.agent-houses-sold {
+  text-transform: uppercase;
+  color: var(--color-grey-light-2);
+  margin-top: -3px;
+}

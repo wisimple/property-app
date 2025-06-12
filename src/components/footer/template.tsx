@@ -30,8 +30,8 @@ export default function FooterTemplate() {
   return (
     <nav className={styles.container}>
       <ul className={styles['item-container']}>
-        {navigationItems.map((item) => (
-          <li className={styles.item}>
+        {navigationItems.map((item, index) => (
+          <li key={index} className={styles.item}>
             <a href={item.href} className={styles.link}>
               {item.label}
             </a>

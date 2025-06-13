@@ -1,5 +1,5 @@
 import { FeaturesSectionTemplate } from '@/components/features-section/template';
-import styles from './page.module.css';
+import styles from './page.module.scss';
 import { StoryContentTemplate } from '@/components/story-content/template';
 import { StoryPicturesTemplate } from '@/components/story-pictures/template';
 import { HomesSectionTemplate } from '@/components/homes-section/template';
